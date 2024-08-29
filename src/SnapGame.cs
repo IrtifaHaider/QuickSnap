@@ -10,7 +10,8 @@ namespace CardGames
         {
             Bitmap cards;
             cards = SwinGame.LoadBitmapNamed ("Cards", "Cards.png");
-            SwinGame.BitmapSetCellDetails (cards, 82, 110, 13, 5, 53);      // set the cells in the bitmap to match the cards
+            SwinGame.BitmapSetCellDetails (cards, 82, 110, 13, 5, 53);  // set the cells in the bitmap to match the cards
+			SwinGame.LoadFontNamed ("GameFont", " ChunkFive-Regular.otf", 12);    
         }
 
 		/// <summary>
@@ -24,7 +25,7 @@ namespace CardGames
 
 			if (SwinGame.KeyTyped (KeyCode.vk_SPACE))
 			{
-				myGame.FlipNextCard ();
+				myGame.Start ();
 			}
 		}
 
