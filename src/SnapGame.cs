@@ -6,34 +6,6 @@ namespace CardGames
 {
     public class SnapGame
     {
-		private static void HandleUserInput(Snap myGame)
-		{
-			//Fetch the next batch of UI interaction
-			SwinGame.ProcessEvents();
-
-			if (SwinGame.KeyTyped (KeyCode.vk_SPACE))
-			{
-				myGame.Start ();
-			}
-		}
-        public static void LoadResources()
-        {
-            Bitmap cards;
-            cards = SwinGame.LoadBitmapNamed ("Cards", "Cards.png");
-            SwinGame.BitmapSetCellDetails (cards, 82, 110, 13, 5, 53);  // set the cells in the bitmap to match the cards
-			SwinGame.LoadFontNamed ("GameFont", " ChunkFive-Regular.otf", 12);    
-        }
-
-		/// <summary>
-		/// Respond to the user input -- with requests affecting myGame
-		/// </summary>
-		/// <param name="myGame">The game object to update in response to events.</param>
-		
-
-		/// <summary>
-		/// Draws the game to the Window.
-		/// </summary>
-		/// <param name="myGame">The details of the game -- mostly top card and scores.</param>
 		private static void DrawGame(Snap myGame)
 		{
 			SwinGame.ClearScreen(Color.White);
@@ -58,8 +30,33 @@ namespace CardGames
 			//Draw onto the screen
 			SwinGame.RefreshScreen(60);
 		}
+		private static void HandleUserInput(Snap myGame)
+		{
+			//Fetch the next batch of UI interaction
+			SwinGame.ProcessEvents();
+
+			if (SwinGame.KeyTyped (KeyCode.vk_SPACE))
+			{
+				myGame.Start ();
+			}
+		}
+        public static void LoadResources()
+        {
+            Bitmap cards;
+            cards = SwinGame.LoadBitmapNamed ("Cards", "Cards.png");
+            SwinGame.BitmapSetCellDetails (cards, 82, 110, 13, 5, 53);  // set the cells in the bitmap to match the cards
+			SwinGame.LoadFontNamed ("GameFont", " ChunkFive-Regular.otf", 12);    
+        }
 
 		/// <summary>
+		
+		/// </summary>
+	/// <param name="myGame">The game object to update in response to events.</param>
+		/// <summary>
+		/// <param name="myGame">The game object to update in response to events.</param>
+		/// </summary>
+		/// <param name="myGame">The details of the game -- mostly top card and scores.</param>
+
 		/// Updates the game -- it should flip the cards itself once started!
 		/// </summary>
 		/// <param name="myGame">The game to be updated...</param>
