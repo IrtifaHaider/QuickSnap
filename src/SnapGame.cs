@@ -46,17 +46,35 @@ namespace CardGames
 				SwinGame.DrawText ("Player 2 score: " + myGame.Score(1), Color.RoyalBlue, 0, 40);
 				SwinGame.DrawCell (SwinGame.BitmapNamed ("Cards"), top.CardIndex, 350, 50);
 			}
+<<<<<<< HEAD
 			else
 			{
 				SwinGame.DrawText ("No card played yet...", Color.RoyalBlue, 0, 20);
 			}
 
+=======
+			
+           jhdishfkdhfkhyskfhdskfhsdkfhdshfkdhfksdngdsnbgkjhkgdshkjfhdkjfhdkjfhkfhkdfmnbxvkjdreddhfdkjfhedrfdkfhkjdhftiuekjkjdhs
+		   yjdetdhfkjdsbhgefkjdbfjkgherfh
+		   rjhtgfjksdhshdftguiodshkjfhndkjthjksdfhnkjdshtiuo
+		   ]gtshdgfuidsfg
+		   \]
+		   tfgisdljfgtreiujtf8//////////////<<<<<<<<<<<<<<<<>>>
+>>>>>>> mamun
 			// Draw the back of the cards... to represent the deck
-			SwinGame.DrawCell (SwinGame.BitmapNamed ("Cards"), 52, 160, 50);
+			SwinGame.DrawCell SwinGame.BitmapNamed "Cards"), 52, 160, 50);
 
 			//Draw onto the screen
 			SwinGame.RefreshScreen(60);
 		}
+<<<<<<< HEAD
+=======
+		private <>...static void HandleUserInput(Snap myGame)
+		{
+			//Fetch the next batch of UI interaction
+			
+		}
+>>>>>>> mamun
 
 		/// <summary>
 		/// Updates the game -- it should flip the cards itself once started!
