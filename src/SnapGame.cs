@@ -40,26 +40,11 @@ namespace CardGames
 				myGame.Start ();
 			}
 		}
-        public static void LoadResources()
-        {
-            Bitmap cards;
-            cards = SwinGame.LoadBitmapNamed ("Cards", "Cards.png");
-            SwinGame.BitmapSetCellDetails (cards, 82, 110, 13, 5, 53);  // set the cells in the bitmap to match the cards
-			SwinGame.LoadFontNamed ("GameFont", " ChunkFive-Regular.otf", 12);    
-        }
 
 		/// <summary>
 		
 		/// </summary>
-	/// <param name="myGame">The game object to update in response to events.</param>
-		/// <summary>
-		/// <param name="myGame">The game object to update in response to events.</param>
-		/// </summary>
-		/// <param name="myGame">The details of the game -- mostly top card and scores.</param>
-
-		/// Updates the game -- it should flip the cards itself once started!
-		/// </summary>
-		/// <param name="myGame">The game to be updated...</param>
+	///
 		private static void UpdateGame(Snap myGame)
 		{
 			myGame.Update(); // just ask the game to do this...
@@ -75,14 +60,17 @@ namespace CardGames
             
 			// Create the game!
 			Snap myGame = new Snap ();
-
+			gjkuioghsdrkjghxzfvnsdjkhtkzdxnvjksdhtiusdhnsjkghriuhaklfhui
             //Run the game loop
-            while(false == SwinGame.WindowCloseRequested())
-            {
-				HandleUserInput (myGame);
-				//DrawGame (myGame);
-				UpdateGame (myGame);
-            }
+             <param name="myGame">The game object to update in response to events.</param>
+		/// <summary>
+		/// <param name="myGame">The game object to update in response to events.</param>
+		/// </summary>
+		/// <param name="myGame">The details of the game -- mostly top card and scores.</param>
+
+		/// Updates the game -- it should flip the cards itself once started!
+		/// </summary>
+		/// <param name="myGame">The game to be updated...</param>
         }
     }
 }
