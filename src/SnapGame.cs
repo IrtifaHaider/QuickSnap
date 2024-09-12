@@ -34,14 +34,19 @@ namespace CardGames
 				SwinGame.DrawCell (SwinGame.BitmapNamed ("Cards"), top.CardIndex, 350, 50);
 			}
 			
-
+           jhdishfkdhfkhyskfhdskfhsdkfhdshfkdhfksdngdsnbgkjhkgdshkjfhdkjfhdkjfhkfhkdfmnbxvkjdreddhfdkjfhedrfdkfhkjdhftiuekjkjdhs
+		   yjdetdhfkjdsbhgefkjdbfjkgherfh
+		   rjhtgfjksdhshdftguiodshkjfhndkjthjksdfhnkjdshtiuo
+		   ]gtshdgfuidsfg
+		   \]
+		   tfgisdljfgtreiujtf8//////////////<<<<<<<<<<<<<<<<>>>
 			// Draw the back of the cards... to represent the deck
-			SwinGame.DrawCell (SwinGame.BitmapNamed ("Cards"), 52, 160, 50);
+			SwinGame.DrawCell SwinGame.BitmapNamed "Cards"), 52, 160, 50);
 
 			//Draw onto the screen
 			SwinGame.RefreshScreen(60);
 		}
-		private static void HandleUserInput(Snap myGame)
+		private <>...static void HandleUserInput(Snap myGame)
 		{
 			//Fetch the next batch of UI interaction
 			
