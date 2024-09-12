@@ -6,6 +6,16 @@ namespace CardGames
 {
     public class SnapGame
     {
+		private static void HandleUserInput(Snap myGame)
+		{
+			//Fetch the next batch of UI interaction
+			SwinGame.ProcessEvents();
+
+			if (SwinGame.KeyTyped (KeyCode.vk_SPACE))
+			{
+				myGame.Start ();
+			}
+		}
         public static void LoadResources()
         {
             Bitmap cards;
@@ -18,16 +28,7 @@ namespace CardGames
 		/// Respond to the user input -- with requests affecting myGame
 		/// </summary>
 		/// <param name="myGame">The game object to update in response to events.</param>
-		private static void HandleUserInput(Snap myGame)
-		{
-			//Fetch the next batch of UI interaction
-			SwinGame.ProcessEvents();
-
-			if (SwinGame.KeyTyped (KeyCode.vk_SPACE))
-			{
-				myGame.Start ();
-			}
-		}
+		
 
 		/// <summary>
 		/// Draws the game to the Window.
@@ -82,7 +83,7 @@ namespace CardGames
             while(false == SwinGame.WindowCloseRequested())
             {
 				HandleUserInput (myGame);
-				DrawGame (myGame);
+				//DrawGame (myGame);
 				UpdateGame (myGame);
             }
         }
